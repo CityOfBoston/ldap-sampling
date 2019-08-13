@@ -1,0 +1,719 @@
+dn: cn=Internal Users,dc=boston,dc=cob
+objectClass: top
+objectClass: organizationalRole
+description: Internal Users
+cn: Internal Users
+
+# -----
+dn: cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectclass: group
+groupType: 123456789
+cn: Groups
+
+# -----
+dn: cn=SG_AB_LAGAN,cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectclass: group
+groupType: 123456789
+cn: SG_AB_LAGAN
+
+# -----
+dn: cn=AB_Security_Groups,cn=Groups,dc=boston,dc=cob
+objectClass: top
+objectClass: organizationalRole
+description: AB_Security_Groups
+cn: AB_Security_Groups
+
+# -----
+dn: cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+objectClass: top
+objectClass: organizationalRole
+description: Lagan_Groups
+cn: Lagan_Groups
+
+# -----
+dn: cn=ANML02_LostFound,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectClass: groupOfUniqueNames
+uniqueMember: 
+cn: ANML02_LostFound
+
+# -----
+dn: cn=BPD_Districts,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectClass: groupOfUniqueNames
+uniqueMember: 
+cn: BPD_Districts
+
+# -----
+dn: cn=BPD_Administrative,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectClass: groupOfUniqueNames
+uniqueMember: 
+cn: BPD_Administrative
+
+# -----
+dn: cn=BPS_Administrative,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectClass: groupOfUniqueNames
+uniqueMember: 
+cn: BPS_Administrative
+
+# -----
+dn: cn=BPS_Transportation_Administration,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectClass: groupOfUniqueNames
+uniqueMember: 
+cn: BPS_Transportation_Administration
+
+# -----
+dn: cn=BTDT_BrokenMeterComplaints,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectClass: groupOfUniqueNames
+uniqueMember: 
+cn: BTDT_BrokenMeterComplaints
+
+# -----
+dn: cn=BTDT_ParkingEnforcement,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectClass: groupOfUniqueNames
+uniqueMember: 
+cn: BTDT_ParkingEnforcement
+
+# -----
+dn: cn=PWDx_District03:NorthDorchester,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectClass: groupOfUniqueNames
+uniqueMember: 
+cn: PWDx_District03:NorthDorchester
+
+# -----
+dn: cn=PWDx_District07:SouthDorchester,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectClass: groupOfUniqueNames
+uniqueMember: 
+cn: PWDx_District07:SouthDorchester
+
+# -----
+dn: cn=PWDx_District10A:Roxbury,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectClass: groupOfUniqueNames
+uniqueMember: 
+cn: PWDx_District10A:Roxbury
+
+
+
+
+
+
+
+
+
+
+# -----
+dn: cn=000296,cn=Internal Users,dc=boston,dc=cob
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+SN: Howard
+givenName: Terra
+displayName: Terra Howard
+mail: terra.howard@boston.gov
+CN: 000296
+uid: 000296
+
+# -----
+dn: cn=132367,cn=Internal Users,dc=boston,dc=cob
+objectclass: inetorgperson
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+employeetype: Full-Time
+sn: Strife
+mail: cloud.strife@cityofboston.gov
+givenname: Cloud
+displayname: Cloud Strife
+cn: 132367
+uid: 132367
+title: Head Clerk & Secretary
+
+# -----
+dn: cn=050086,cn=Internal Users,dc=boston,dc=cob
+objectclass: inetorgperson
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+employeetype: Part-Time
+mail: kefka.palazzo@cityofboston.gov
+sn: Palazzo
+givenname: Kefka
+displayname: Kefka Palazzo
+cn: 050086
+uid: 050086
+title: Staff Asst II
+
+# -----
+dn: cn=087028,cn=Internal Users,dc=boston,dc=cob
+objectclass: inetorgperson
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+employeetype: Full-Time
+mail: vincent.valentine@boston.gov
+sn: valentine
+givenname: Vincent
+displayname: Vincent Valentine
+cn: 087028
+uid: 087028
+title: Staff Asst II
+
+# -----
+dn: cn=097738,cn=Internal Users,dc=boston,dc=cob
+objectclass: inetorgperson
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+employeetype: Full-Time
+mail: vivi.orunitia@boston.k12.ma.us
+sn: Orunitia
+givenname: Vivi
+displayName: Vivi Orunitia
+cn: 097738
+uid: 097738
+title: Asst Director (D) (non ac)
+
+# -----
+dn: cn=053355,cn=Internal Users,dc=boston,dc=cob
+objectclass: inetorgperson
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+employeetype: Full-Time
+mail: zack.fair@cityofboston.gov
+sn: Fair
+givenname: Zack
+displayname: Zack Fair
+cn: 053355
+uid: 053355
+title: Sr Admin Asst (Pwd)
+
+# -----
+dn: cn=053342,cn=Internal Users,dc=boston,dc=cob
+objectclass: inetorgperson
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+employeetype: Full-Time
+mail: aeris.gainsborough@cityofboston.gov
+sn: Gainsborough
+givenname: Aeris
+displayname: Aeris Gainsborough
+cn: 053342
+uid: 053342
+title: Sr Admin Asst (Pwd)
+
+# -----
+dn: cn=143523,cn=Internal Users,dc=boston,dc=cob
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+mail: zidane.tribal@boston.gov
+sn: Tribal
+givenName: Zidane
+displayName: Zidane Tribal
+cn: 143523
+uid: 143523
+
+# -----
+dn: cn=054363,cn=Internal Users,dc=boston,dc=cob
+objectclass: inetorgperson
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+employeetype: Full-Time
+mail: barret.wallace@boston.gov
+sn: Wallace
+givenname: Barret
+displayname: Barret Wallace
+cn: 054363
+uid: 054363
+title: Supv-Parking Meter Operations
+
+# -----
+dn: cn=081782,cn=Internal Users,dc=boston,dc=cob
+objectclass: inetorgperson
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+employeetype: Full-Time
+mail: quistis.trepe@boston.gov
+sn: Trepe
+givenname: Quistis
+displayname: Quistis Trepe
+cn: 081782
+uid: 081782
+title: Parking Meter Oper Frprs##
+
+# -----
+dn: cn=100992,cn=Internal Users,dc=boston,dc=cob
+objectclass: inetorgperson
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+employeetype: Full-Time
+mail: rinoa.heartilly@boston.gov
+sn: Heartilly
+givenname: Rinoa
+displayname: Rinoa Heartilly
+cn: 100992
+uid: 100992
+title: Chief of Streets
+
+# -----
+dn: cn=052947,cn=Internal Users,dc=boston,dc=cob
+objectclass: inetorgperson
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+employeetype: Full-Time
+mail: cecil.harvey@boston.gov
+sn: Harvey
+givenname: Cecil
+cn: 052947
+uid: 052947
+title: Supv-Parking Meter Operations
+
+# -----
+dn: cn=Garnet Alexandros, cn=Internal Users,dc=boston,dc=cob
+objectClass: inetorgperson
+objectClass: top
+objectClass: organizationalPerson
+objectClass: person
+employeetype: Full-Time
+mail: garnet.lexandros@boston.gov
+sn: Alexandros
+givenname: Garnet
+cn: Garnet Alexandros
+uid: Garnet Alexandros
+
+# ----
+dn: cn=Celes Chere, cn=Internal Users,dc=boston,dc=cob
+objectClass: inetorgperson
+objectClass: top
+objectClass: organizationalPerson
+objectClass: person
+employeetype: Full-Time
+mail: celes.chere@boston.gov
+sn: Chere
+givenname: Celes
+cn: Celes Chere
+uid: Celes Chere
+
+# -----
+dn: cn=Laguna Loire, cn=Internal Users,dc=boston,dc=cob
+objectClass: inetorgperson
+objectClass: top
+objectClass: organizationalPerson
+objectClass: person
+employeetype: Full-Time
+mail: laguna.loire@boston.gov
+sn: Loire
+givenname: Laguna
+cn: Laguna Loire
+uid: Laguna Loire
+
+# -----
+dn: cn=Ignis Scientia, cn=Internal Users,dc=boston,dc=cob
+objectClass: inetorgperson
+objectClass: top
+objectClass: organizationalPerson
+objectClass: person
+employeetype: Full-Time
+mail: ignis.scientia@boston.gov
+sn: Scientia
+givenname: Ignis
+cn: Ignis Scientia
+uid: Ignis Scientia
+
+# -----
+dn: cn=Edea Kramer, cn=Internal Users,dc=boston,dc=cob
+objectClass: inetorgperson
+objectClass: top
+objectClass: organizationalPerson
+objectClass: person
+employeetype: Full-Time
+mail: edea.kramer@boston.gov
+sn: Kramer
+givenname: Edea
+cn: Edea Kramer
+uid: Edea Kramer
+
+# -----
+dn: cn=Freya Crescent, cn=Internal Users,dc=boston,dc=cob
+objectClass: inetorgperson
+objectClass: top
+objectClass: organizationalPerson
+objectClass: person
+employeetype: Full-Time
+mail: freya.crescent@boston.gov
+sn: Crescent
+givenname: Freya
+cn: Freya Crescent
+uid: Freya Crescent
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+dn: cn=ANML02_LostFound,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=132367,cn=Internal Users,dc=boston,dc=cob
+
+
+dn: cn=ANML02_LostFound,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=Ignis Scientia, cn=Internal Users,dc=boston,dc=cob
+
+
+dn: cn=ANML02_LostFound,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=Laguna Loire, cn=Internal Users,dc=boston,dc=cob
+
+
+dn: cn=BPD_Administrative,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=050086,cn=Internal Users,dc=boston,dc=cob
+
+
+dn: cn=BPD_Administrative,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=087028,cn=Internal Users,dc=boston,dc=cob
+
+
+dn: cn=BPD_Districts,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=050086,cn=Internal Users,dc=boston,dc=cob
+
+
+dn: cn=BPD_Districts,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=087028,cn=Internal Users,dc=boston,dc=cob
+
+
+dn: cn=BPS_Administrative,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=050086,cn=Internal Users,dc=boston,dc=cob
+
+
+dn: cn=BPS_Administrative,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=087028,cn=Internal Users,dc=boston,dc=cob
+
+
+dn: cn=BPS_Transportation_Administration,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=097738,cn=Internal Users,dc=boston,dc=cob
+
+
+dn: cn=BTDT_BrokenMeterComplaints,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=053355,cn=Internal Users,dc=boston,dc=cob
+
+
+dn: cn=BTDT_BrokenMeterComplaints,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=053342,cn=Internal Users,dc=boston,dc=cob
+
+
+dn: cn=BTDT_BrokenMeterComplaints,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=143523,cn=Internal Users,dc=boston,dc=cob
+
+
+dn: cn=BTDT_BrokenMeterComplaints,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=054363,cn=Internal Users,dc=boston,dc=cob
+
+
+dn: cn=BTDT_BrokenMeterComplaints,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=081782,cn=Internal Users,dc=boston,dc=cob
+
+
+dn: cn=BTDT_BrokenMeterComplaints,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=100992,cn=Internal Users,dc=boston,dc=cob
+
+
+dn: cn=BTDT_BrokenMeterComplaints,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=052947,cn=Internal Users,dc=boston,dc=cob
+
+# -----
+
+
+# -----
+
+
+# -----
+dn: cn=BTDT_ParkingEnforcement,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=143523,cn=Internal Users,dc=boston,dc=cob
+
+# -----
+dn: cn=BTDT_ParkingEnforcement,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=054363,cn=Internal Users,dc=boston,dc=cob
+
+# -----
+dn: cn=BTDT_ParkingEnforcement,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=081782,cn=Internal Users,dc=boston,dc=cob
+
+# -----
+dn: cn=BTDT_ParkingEnforcement,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=100992,cn=Internal Users,dc=boston,dc=cob
+
+# -----
+dn: cn=BTDT_ParkingEnforcement,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=052947,cn=Internal Users,dc=boston,dc=cob
+
+# -----
+dn: cn=BTDT_ParkingEnforcement,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=Garnet Alexandros, cn=Internal Users,dc=boston,dc=cob
+
+# -----
+dn: cn=BTDT_ParkingEnforcement,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=Celes Chere, cn=Internal Users,dc=boston,dc=cob
+
+# -----
+
+
+# -----
+
+
+# -----
+dn: cn=PWDx_District03:NorthDorchester,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=Garnet Alexandros, cn=Internal Users,dc=boston,dc=cob
+
+# -----
+dn: cn=PWDx_District03:NorthDorchester,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=052947,cn=Internal Users,dc=boston,dc=cob
+
+# -----
+dn: cn=PWDx_District03:NorthDorchester,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=Laguna Loire, cn=Internal Users,dc=boston,dc=cob
+
+# -----
+
+
+# -----
+dn: cn=PWDx_District07:SouthDorchester,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=Garnet Alexandros, cn=Internal Users,dc=boston,dc=cob
+
+# -----
+dn: cn=PWDx_District07:SouthDorchester,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=Edea Kramer, cn=Internal Users,dc=boston,dc=cob
+
+# -----
+dn: cn=PWDx_District07:SouthDorchester,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=Laguna Loire, cn=Internal Users,dc=boston,dc=cob
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+dn: cn=PWDx_District10A:Roxbury,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=053342,cn=Internal Users,dc=boston,dc=cob
+
+# -----
+dn: cn=PWDx_District10A:Roxbury,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=Freya Crescent, cn=Internal Users,dc=boston,dc=cob
+
+# -----
+dn: cn=PWDx_District10A:Roxbury,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=Edea Kramer, cn=Internal Users,dc=boston,dc=cob
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+# -----
+
+
+
+
+
+

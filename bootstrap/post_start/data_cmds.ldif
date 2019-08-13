@@ -1,0 +1,741 @@
+# ADD: 'Internal Users'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=Internal Users,dc=boston,dc=cob
+objectClass: top
+objectClass: organizationalRole
+description: Internal Users
+cn: Internal Users
+!
+
+# ADD: 'Groups' Container
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectclass: group
+groupType: 123456789
+cn: Groups
+!
+
+# ADD: to 'Groups', SG AB LAGAN
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=SG_AB_LAGAN,cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectclass: group
+groupType: 123456789
+cn: SG_AB_LAGAN
+!
+
+# ADD: 'Groups' > 'AB_Security_Groups' Folder
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=AB_Security_Groups,cn=Groups,dc=boston,dc=cob
+objectClass: top
+objectClass: organizationalRole
+description: AB_Security_Groups
+cn: AB_Security_Groups
+!
+
+# ADD: 'Groups' > 'cn=Lagan_Groups' Folder
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+objectClass: top
+objectClass: organizationalRole
+description: Lagan_Groups
+cn: Lagan_Groups
+!
+
+# ADD: 'Groups' > 'cn=Lagan_Groups' > 'ANML02_LostFound'
+# ldapdelete -x -D cn=ANML02_LostFound,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=ANML02_LostFound,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectClass: groupOfUniqueNames
+uniqueMember: 
+cn: ANML02_LostFound
+!
+
+# ADD: 'Groups' > 'cn=Lagan_Groups' > 'BPD_Districts'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BPD_Districts,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectClass: groupOfUniqueNames
+uniqueMember: 
+cn: BPD_Districts
+!
+
+# ADD: 'Groups' > 'cn=Lagan_Groups' > 'BPD_Administrative'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BPD_Administrative,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectClass: groupOfUniqueNames
+uniqueMember: 
+cn: BPD_Administrative
+!
+
+# ADD: 'Groups' > 'cn=Lagan_Groups' > 'BPS_Administrative'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BPS_Administrative,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectClass: groupOfUniqueNames
+uniqueMember: 
+cn: BPS_Administrative
+!
+
+# ADD: 'Groups' > 'cn=Lagan_Groups' > 'BPS_Transportation_Administration'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BPS_Transportation_Administration,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectClass: groupOfUniqueNames
+uniqueMember: 
+cn: BPS_Transportation_Administration
+!
+
+# ADD: 'Groups' > 'cn=Lagan_Groups' > 'BTDT_BrokenMeterComplaints'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BTDT_BrokenMeterComplaints,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectClass: groupOfUniqueNames
+uniqueMember: 
+cn: BTDT_BrokenMeterComplaints
+!
+
+# ADD: 'Groups' > 'cn=Lagan_Groups' > 'BTDT_ParkingEnforcement'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BTDT_ParkingEnforcement,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectClass: groupOfUniqueNames
+uniqueMember: 
+cn: BTDT_ParkingEnforcement
+!
+
+# ADD: 'Groups' > 'cn=Lagan_Groups' > 'PWDx_District03:NorthDorchester'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=PWDx_District03:NorthDorchester,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectClass: groupOfUniqueNames
+uniqueMember: 
+cn: PWDx_District03:NorthDorchester
+!
+
+# ADD: 'Groups' > 'cn=Lagan_Groups' > 'PWDx_District07:SouthDorchester'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=PWDx_District07:SouthDorchester,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectClass: groupOfUniqueNames
+uniqueMember: 
+cn: PWDx_District07:SouthDorchester
+!
+
+# ADD: 'Groups' > 'cn=Lagan_Groups' > 'PWDx_District10A:Roxbury'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=PWDx_District10A:Roxbury,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+objectclass: top
+objectClass: groupOfUniqueNames
+uniqueMember: 
+cn: PWDx_District10A:Roxbury
+!
+
+
+-----------------------------
+
+# ADD: 'Internal User' > cn=000296
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=000296,cn=Internal Users,dc=boston,dc=cob
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+SN: Howard
+givenName: Terra
+displayName: Terra Howard
+mail: terra.howard@boston.gov
+CN: 000296
+uid: 000296
+!
+
+# ----------------------------------------
+# Internal User (EMPLOYEE)
+# dn, employeetype, l, sn, givenname, 
+# objectclass (inetorgperson, top, organizationalPerson, person), 
+# displayname, cn, uid, title
+
+# MOD: cn=ANML02_LostFound,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+# -------------------
+# ADD: 'Internal User' > cn=132367
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=132367,cn=Internal Users,dc=boston,dc=cob
+objectclass: inetorgperson
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+employeetype: Full-Time
+sn: Strife
+mail: cloud.strife@cityofboston.gov
+givenname: Cloud
+displayname: Cloud Strife
+cn: 132367
+uid: 132367
+title: Head Clerk & Secretary
+!
+
+# ADD: 'Internal User' > cn=050086
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=050086,cn=Internal Users,dc=boston,dc=cob
+objectclass: inetorgperson
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+employeetype: Part-Time
+mail: kefka.palazzo@cityofboston.gov
+sn: Palazzo
+givenname: Kefka
+displayname: Kefka Palazzo
+cn: 050086
+uid: 050086
+title: Staff Asst II
+!
+
+# ADD: 'Internal User' > cn=087028
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=087028,cn=Internal Users,dc=boston,dc=cob
+objectclass: inetorgperson
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+employeetype: Full-Time
+mail: vincent.valentine@boston.gov
+sn: valentine
+givenname: Vincent
+displayname: Vincent Valentine
+cn: 087028
+uid: 087028
+title: Staff Asst II
+!
+
+# ADD: 'Internal User' > cn=097738
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=097738,cn=Internal Users,dc=boston,dc=cob
+objectclass: inetorgperson
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+employeetype: Full-Time
+mail: vivi.orunitia@boston.k12.ma.us
+sn: Orunitia
+givenname: Vivi
+displayName: Vivi Orunitia
+cn: 097738
+uid: 097738
+title: Asst Director (D) (non ac)
+!
+
+# ADD: 'Internal User' > cn=053355
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=053355,cn=Internal Users,dc=boston,dc=cob
+objectclass: inetorgperson
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+employeetype: Full-Time
+mail: zack.fair@cityofboston.gov
+sn: Fair
+givenname: Zack
+displayname: Zack Fair
+cn: 053355
+uid: 053355
+title: Sr Admin Asst (Pwd)
+!
+
+# ADD: 'Internal User' > cn=053342
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=053342,cn=Internal Users,dc=boston,dc=cob
+objectclass: inetorgperson
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+employeetype: Full-Time
+mail: aeris.gainsborough@cityofboston.gov
+sn: Gainsborough
+givenname: Aeris
+displayname: Aeris Gainsborough
+cn: 053342
+uid: 053342
+title: Sr Admin Asst (Pwd)
+!
+
+# ADD: 'Internal User' > cn=143523
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=143523,cn=Internal Users,dc=boston,dc=cob
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+mail: zidane.tribal@boston.gov
+sn: Tribal
+givenName: Zidane
+displayName: Zidane Tribal
+cn: 143523
+uid: 143523
+!
+
+# ADD: 'Internal User' > cn=054363
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=054363,cn=Internal Users,dc=boston,dc=cob
+objectclass: inetorgperson
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+employeetype: Full-Time
+mail: barret.wallace@boston.gov
+sn: Wallace
+givenname: Barret
+displayname: Barret Wallace
+cn: 054363
+uid: 054363
+title: Supv-Parking Meter Operations
+!
+
+# ADD: 'Internal User' > cn=081782
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=081782,cn=Internal Users,dc=boston,dc=cob
+objectclass: inetorgperson
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+employeetype: Full-Time
+mail: quistis.trepe@boston.gov
+sn: Trepe
+givenname: Quistis
+displayname: Quistis Trepe
+cn: 081782
+uid: 081782
+title: Parking Meter Oper Frprs
+!
+
+# ADD: 'Internal User' > cn=100992
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=100992,cn=Internal Users,dc=boston,dc=cob
+objectclass: inetorgperson
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+employeetype: Full-Time
+mail: rinoa.heartilly@boston.gov
+sn: Heartilly
+givenname: Rinoa
+displayname: Rinoa Heartilly
+cn: 100992
+uid: 100992
+title: Chief of Streets
+!
+
+# ADD: 'Internal User' > cn=052947
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=052947,cn=Internal Users,dc=boston,dc=cob
+objectclass: inetorgperson
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+employeetype: Full-Time
+mail: cecil.harvey@boston.gov
+sn: Harvey
+givenname: Cecil
+cn: 052947
+uid: 052947
+title: Supv-Parking Meter Operations
+!
+
+# ADD: 'Internal User' > cn=Garnet Alexandros
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=Garnet Alexandros, cn=Internal Users,dc=boston,dc=cob
+objectClass: inetorgperson
+objectClass: top
+objectClass: organizationalPerson
+objectClass: person
+employeetype: Full-Time
+mail: garnet.lexandros@boston.gov
+sn: Alexandros
+givenname: Garnet
+cn: Garnet Alexandros
+uid: Garnet Alexandros
+!
+
+# ADD: 'Internal User' > cn=Celes Chere
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=Celes Chere, cn=Internal Users,dc=boston,dc=cob
+objectClass: inetorgperson
+objectClass: top
+objectClass: organizationalPerson
+objectClass: person
+employeetype: Full-Time
+mail: celes.chere@boston.gov
+sn: Chere
+givenname: Celes
+cn: Celes Chere
+uid: Celes Chere
+!
+
+# ADD: 'Internal User' > cn=Laguna Loire
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=Laguna Loire, cn=Internal Users,dc=boston,dc=cob
+objectClass: inetorgperson
+objectClass: top
+objectClass: organizationalPerson
+objectClass: person
+employeetype: Full-Time
+mail: laguna.loire@boston.gov
+sn: Loire
+givenname: Laguna
+cn: Laguna Loire
+uid: Laguna Loire
+!
+
+# ADD: 'Internal User' > cn=Ignis Scientia
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=Ignis Scientia, cn=Internal Users,dc=boston,dc=cob
+objectClass: inetorgperson
+objectClass: top
+objectClass: organizationalPerson
+objectClass: person
+employeetype: Full-Time
+mail: ignis.scientia@boston.gov
+sn: Scientia
+givenname: Ignis
+cn: Ignis Scientia
+uid: Ignis Scientia
+!
+
+# ADD: 'Internal User' > cn=Edea Kramer
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=Edea Kramer, cn=Internal Users,dc=boston,dc=cob
+objectClass: inetorgperson
+objectClass: top
+objectClass: organizationalPerson
+objectClass: person
+employeetype: Full-Time
+mail: edea.kramer@boston.gov
+sn: Kramer
+givenname: Edea
+cn: Edea Kramer
+uid: Edea Kramer
+!
+
+# ADD: 'Internal User' > cn=Freya Crescent
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=Freya Crescent, cn=Internal Users,dc=boston,dc=cob
+objectClass: inetorgperson
+objectClass: top
+objectClass: organizationalPerson
+objectClass: person
+employeetype: Full-Time
+mail: freya.crescent@boston.gov
+sn: Crescent
+givenname: Freya
+cn: Freya Crescent
+uid: Freya Crescent
+!
+
+
+# ----------------------------------------
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'ANML02_LostFound'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=ANML02_LostFound,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=132367,cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'ANML02_LostFound'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=ANML02_LostFound,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=Ignis Scientia, cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'ANML02_LostFound'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=ANML02_LostFound,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=Laguna Loire, cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'BPD_Administrative'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BPD_Administrative,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=050086,cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'BPD_Administrative'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BPD_Administrative,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=087028,cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'BPD_District'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BPD_Districts,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=050086,cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'BPD_Districts'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BPD_Districts,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=087028,cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'BPS_Administrative'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BPS_Administrative,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=050086,cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'BPS_Administrative'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BPS_Administrative,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=087028,cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'BPS_Transportation_Administration'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BPS_Transportation_Administration,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=097738,cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'BTDT_BrokenMeterComplaints'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BTDT_BrokenMeterComplaints,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=053355,cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'BTDT_BrokenMeterComplaints'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BTDT_BrokenMeterComplaints,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=053342,cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'BTDT_BrokenMeterComplaints'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BTDT_BrokenMeterComplaints,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=143523,cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'BTDT_BrokenMeterComplaints'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BTDT_BrokenMeterComplaints,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=054363,cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'BTDT_BrokenMeterComplaints'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BTDT_BrokenMeterComplaints,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=081782,cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'BTDT_BrokenMeterComplaints'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BTDT_BrokenMeterComplaints,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=100992,cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'BTDT_BrokenMeterComplaints'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BTDT_BrokenMeterComplaints,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=052947,cn=Internal Users,dc=boston,dc=cob
+!
+
+
+
+
+
+
+
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'BTDT_ParkingEnforcement'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BTDT_ParkingEnforcement,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=143523,cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'BTDT_ParkingEnforcement'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BTDT_ParkingEnforcement,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=054363,cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'BTDT_ParkingEnforcement'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BTDT_ParkingEnforcement,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=081782,cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'BTDT_ParkingEnforcement'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BTDT_ParkingEnforcement,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=100992,cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'BTDT_ParkingEnforcement'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BTDT_ParkingEnforcement,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=052947,cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'BTDT_ParkingEnforcement'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BTDT_ParkingEnforcement,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=Garnet Alexandros, cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'BTDT_ParkingEnforcement'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=BTDT_ParkingEnforcement,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=Celes Chere, cn=Internal Users,dc=boston,dc=cob
+!
+
+
+
+
+
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'PWDx_District03:NorthDorchester'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=PWDx_District03:NorthDorchester,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=Garnet Alexandros, cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'PWDx_District03:NorthDorchester'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=PWDx_District03:NorthDorchester,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=052947,cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'PWDx_District03:NorthDorchester'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=PWDx_District03:NorthDorchester,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=Laguna Loire, cn=Internal Users,dc=boston,dc=cob
+!
+
+
+
+
+
+
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'PWDx_District07:SouthDorchester'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=PWDx_District07:SouthDorchester,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=Garnet Alexandros, cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'PWDx_District07:SouthDorchester'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=PWDx_District07:SouthDorchester,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=Edea Kramer, cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'PWDx_District07:SouthDorchester'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=PWDx_District07:SouthDorchester,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=Laguna Loire, cn=Internal Users,dc=boston,dc=cob
+!
+
+
+
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'PWDx_District10A:Roxbury'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=PWDx_District10A:Roxbury,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=053342,cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'PWDx_District10A:Roxbury'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=PWDx_District10A:Roxbury,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=Freya Crescent, cn=Internal Users,dc=boston,dc=cob
+!
+
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'PWDx_District10A:Roxbury'
+ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=PWDx_District10A:Roxbury,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=Edea Kramer, cn=Internal Users,dc=boston,dc=cob
+!
+
+
+
+# --------------------
+
+
+# ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+# dn: cn=700011,cn=Internal Users,dc=boston,dc=cob
+# changetype: modify
+# replace: mail
+# mail: ldap@boston.gov
+# !
+
+
+
+
+
+
