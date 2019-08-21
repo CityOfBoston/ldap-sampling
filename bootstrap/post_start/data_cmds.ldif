@@ -722,6 +722,14 @@ add: uniquemember
 uniquemember: cn=Edea Kramer, cn=Internal Users,dc=boston,dc=cob
 !
 
+# MOD: Member 'Groups' > 'cn=Lagan_Groups' > 'PWDx_District10A:Roxbury'
+ldapmodify -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+dn: cn=PWDx_District10A:Roxbury,cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
+changetype: modify
+add: uniquemember
+uniquemember: cn=052947,cn=Internal Users,dc=boston,dc=cob
+!
+
 
 
 # --------------------

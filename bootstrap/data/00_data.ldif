@@ -282,6 +282,7 @@ employeetype: Full-Time
 mail: cecil.harvey@boston.gov
 sn: Harvey
 givenname: Cecil
+displayName: Cecil Harvey
 cn: 052947
 uid: 052947
 title: Supv-Parking Meter Operations
@@ -296,6 +297,7 @@ employeetype: Full-Time
 mail: garnet.lexandros@boston.gov
 sn: Alexandros
 givenname: Garnet
+displayName: Garnet Alexandros
 cn: Garnet Alexandros
 uid: Garnet Alexandros
 
@@ -309,6 +311,7 @@ employeetype: Full-Time
 mail: celes.chere@boston.gov
 sn: Chere
 givenname: Celes
+displayName: Celes Chere
 cn: Celes Chere
 uid: Celes Chere
 
@@ -322,6 +325,7 @@ employeetype: Full-Time
 mail: laguna.loire@boston.gov
 sn: Loire
 givenname: Laguna
+displayName: Laguna Loire
 cn: Laguna Loire
 uid: Laguna Loire
 
@@ -335,6 +339,7 @@ employeetype: Full-Time
 mail: ignis.scientia@boston.gov
 sn: Scientia
 givenname: Ignis
+displayName: Ignis Scientia
 cn: Ignis Scientia
 uid: Ignis Scientia
 
@@ -348,6 +353,7 @@ employeetype: Full-Time
 mail: edea.kramer@boston.gov
 sn: Kramer
 givenname: Edea
+displayName: Edea Kramer
 cn: Edea Kramer
 uid: Edea Kramer
 
@@ -361,6 +367,7 @@ employeetype: Full-Time
 mail: freya.crescent@boston.gov
 sn: Crescent
 givenname: Freya
+displayName: Freya Crescent
 cn: Freya Crescent
 uid: Freya Crescent
 
