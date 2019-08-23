@@ -6,14 +6,12 @@
 
 ```bash
 # Docker Image:
-# docker pull phillipbentonkelly/docker-ldap-mock-data
 docker pull bostongov/ldap-sampling
-# docker run --privileged -d -p 388:389 phillipbentonkelly/docker-ldap-mock-data
 docker run --privileged -d -p 389:389 bostongov/ldap-sampling
+
 # OR
 
-# Repo pull-down (Use this method if you plan on running the node server)
-# git clone git@github.com:phillipbentonkelly/docker-ldap-mock-data.git
+# Repo: Use this method if you plan on running the node server
 git clone git@github.com:CityOfBoston/ldap-sampling.git
 # cd into the directory
 docker build -t ldap-mock-1 --no-cache . && docker run --privileged -d -p 389:389 --name ldap-mock-1 ldap-mock-1
