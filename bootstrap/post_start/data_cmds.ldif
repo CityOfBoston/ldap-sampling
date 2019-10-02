@@ -17,22 +17,66 @@ cn: Groups
 !
 
 # ADD: to 'Groups', SG AB LAGAN
-ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
-dn: cn=SG_AB_LAGAN,cn=Groups,dc=boston,dc=cob
-objectclass: top
-objectclass: group
-groupType: 123456789
-cn: SG_AB_LAGAN
-!
+# ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+# dn: cn=SG_AB_LAGAN,cn=Groups,dc=boston,dc=cob
+# objectclass: top
+# objectclass: group
+# groupType: 123456789
+# cn: SG_AB_LAGAN
+# !
 
-# ADD: 'Groups' > 'AB_Security_Groups' Folder
-ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
-dn: cn=AB_Security_Groups,cn=Groups,dc=boston,dc=cob
-objectClass: top
-objectClass: organizationalRole
-description: AB_Security_Groups
-cn: AB_Security_Groups
-!
+# # ADD: 'Groups' > 'AB_Security_Groups' Folder
+# ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+# dn: cn=AB_Security_Groups,cn=Groups,dc=boston,dc=cob
+# objectClass: top
+# objectClass: organizationalRole
+# description: AB_Security_Groups
+# cn: AB_Security_Groups
+# !
+
+
+# # ADD: 'Groups' > 'cn=AB_Security_Groups' Folder
+# ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+# dn: cn=AB_Security_Groups,cn=Groups,dc=boston,dc=cob
+# objectClass: top
+# objectClass: organizationalRole
+# description: AB_Security_Groups
+# cn: AB_Security_Groups
+# !
+
+# # ADD: 'Groups' > 'cn=AB_Security_Groups' > 'SG_AB_GRPMGMT_AUDITING'
+# # ldapdelete -x -D cn=SG_AB_GRPMGMT_AUDITING,cn=AB_Security_Groups,cn=Groups,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone'
+# ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+# dn: cn=SG_AB_GRPMGMT_AUDITING,cn=AB_Security_Groups,cn=Groups,dc=boston,dc=cob
+# objectclass: top
+# objectClass: groupOfUniqueNames
+# uniqueMember: 
+# cn: SG_AB_GRPMGMT_AUDITING
+# !
+
+# # ADD: 'Groups' > AUDITING'
+# # ldapdelete -x -D cn=AUDITING,cn=Groups,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone'
+# ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+# dn: cn=AUDITING,cn=Groups,dc=boston,dc=cob
+# objectclass: top
+# objectClass: groupOfUniqueNames
+# uniqueMember: 
+# cn: AUDITING
+# !
+
+# # ADD: 'Groups' > AUDITING'
+# # ldapdelete -x -D cn=SG_AB_AUDITING,cn=AUDITING,cn=Groups,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone'
+# ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!
+# dn: cn=SG_AB_AUDITING,cn=AUDITING,cn=Groups,dc=boston,dc=cob
+# objectclass: top
+# objectClass: groupOfUniqueNames
+# uniqueMember: 
+# cn: SG_AB_AUDITING
+# !
+
+
+
+
 
 # ADD: 'Groups' > 'cn=Lagan_Groups' Folder
 ldapadd -x -D cn=admin,dc=boston,dc=cob -H ldap://localhost:388 -w 'GoodNewsEveryone' <<!

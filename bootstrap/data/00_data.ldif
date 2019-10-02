@@ -26,6 +26,119 @@ description: AB_Security_Groups
 cn: AB_Security_Groups
 
 # -----
+dn: cn=SG_AB_GRPMGMT_AUDITING,cn=AB_Security_Groups,cn=Groups,dc=boston,dc=cob
+objectClass: top
+objectClass: organizationalRole
+description: SG_AB_GRPMGMT_AUDITING
+cn: SG_AB_GRPMGMT_AUDITING
+
+# -----
+dn: cn=SG_AB_GRPMGMT_CIVIS,cn=AB_Security_Groups,cn=Groups,dc=boston,dc=cob
+objectClass: top
+objectClass: organizationalRole
+description: SG_AB_GRPMGMT_CIVIS
+cn: SG_AB_GRPMGMT_CIVIS
+
+# -----
+dn: cn=SG_AB_GRPMGMT_EBUILDER,cn=AB_Security_Groups,cn=Groups,dc=boston,dc=cob
+objectClass: top
+objectClass: organizationalRole
+description: SG_AB_GRPMGMT_EBUILDER
+cn: SG_AB_GRPMGMT_EBUILDER
+
+# -----
+dn: cn=SG_AB_GRPMGMT_HYPERION,cn=AB_Security_Groups,cn=Groups,dc=boston,dc=cob
+objectClass: top
+objectClass: organizationalRole
+description: SG_AB_GRPMGMT_HYPERION
+cn: SG_AB_GRPMGMT_HYPERION
+
+# -----
+dn: cn=SG_AB_GRPMGMT_Lagan_Groups,cn=AB_Security_Groups,cn=Groups,dc=boston,dc=cob
+objectClass: top
+objectClass: organizationalRole
+description: SG_AB_GRPMGMT_Lagan_Groups
+cn: SG_AB_GRPMGMT_Lagan_Groups
+
+# -----
+dn: cn=SG_AB_GRPMGMT_PSFN,cn=AB_Security_Groups,cn=Groups,dc=boston,dc=cob
+objectClass: top
+objectClass: organizationalRole
+description: SG_AB_GRPMGMT_PSFN
+cn: SG_AB_GRPMGMT_PSFN
+
+# -----
+dn: cn=SG_AB_GRPMGMT_PSHCM,cn=AB_Security_Groups,cn=Groups,dc=boston,dc=cob
+objectClass: top
+objectClass: organizationalRole
+description: SG_AB_GRPMGMT_PSHCM
+cn: SG_AB_GRPMGMT_PSHCM
+
+# -----
+dn: cn=SG_AB_GRPMGMT_TREASURY,cn=AB_Security_Groups,cn=Groups,dc=boston,dc=cob
+objectClass: top
+objectClass: organizationalRole
+description: SG_AB_GRPMGMT_TREASURY
+cn: SG_AB_GRPMGMT_TREASURY
+
+
+
+
+
+# -----
+dn: cn=AUDITING,cn=Groups,dc=boston,dc=cob
+objectClass: top
+objectClass: groupOfUniqueNames
+uniqueMember: 
+description: AUDITING
+cn: AUDITING
+
+# -
+dn: cn=SG_AB_AUDITING,cn=AUDITING,cn=Groups,dc=boston,dc=cob
+objectClass: top
+objectClass: groupOfUniqueNames
+description: SG_AB_AUDITING
+uniqueMember: 
+cn: SG_AB_AUDITING
+
+# -----
+dn: cn=CIVIS,cn=Groups,dc=boston,dc=cob
+objectClass: top
+objectClass: groupOfUniqueNames
+uniqueMember: 
+description: CIVIS
+cn: CIVIS
+
+# -
+dn: cn=SG_AB_CIVIS,cn=CIVIS,cn=Groups,dc=boston,dc=cob
+objectClass: top
+objectClass: groupOfUniqueNames
+description: SG_AB_CIVIS
+uniqueMember: 
+cn: SG_AB_CIVIS
+
+# -----
+dn: cn=EBUILDER,cn=Groups,dc=boston,dc=cob
+objectClass: top
+objectClass: groupOfUniqueNames
+uniqueMember: 
+description: EBUILDER
+cn: EBUILDER
+
+# -
+dn: cn=SG_AB_EBUILDER,cn=EBUILDER,cn=Groups,dc=boston,dc=cob
+objectClass: top
+objectClass: groupOfUniqueNames
+description: SG_AB_EBUILDER
+uniqueMember: 
+cn: SG_AB_EBUILDER
+
+
+
+
+
+
+# -----
 dn: cn=Lagan_Groups,cn=Groups,dc=boston,dc=cob
 objectClass: top
 objectClass: organizationalRole
